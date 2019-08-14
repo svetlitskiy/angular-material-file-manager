@@ -26,5 +26,13 @@
         "dist/mat-file-manager/*"
       ]
     }
-  }
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "e2e",
+    "src/main.ts",
+    "src/test.ts",
+    "projects/mat-file-manager/src/main.ts",
+    "projects/mat-file-manager/src/test.ts"
+  ]
 }

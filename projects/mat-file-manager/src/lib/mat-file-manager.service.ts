@@ -5,5 +5,5 @@ import { Injectable } from '@angular/core';
 })
 export class MatFileManagerService {
 
-  constructor() { }
+  public constructor() { }
 }

@@ -1,19 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-mat-file-manager',
-  template: `
-    <p>
-      mat-file-manager works!
-    </p>
-  `,
-  styles: []
+  selector: 'mat-file-manager',
+  templateUrl: 'mat-file-manager.component.html',
+  styleUrls: ['mat-file-manager.component.scss'],
 })
 export class MatFileManagerComponent implements OnInit {
 
-  constructor() { }
+  public constructor() { }
 
-  ngOnInit() {
+  public ngOnInit(): void {
   }
 
 }
