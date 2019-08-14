@@ -7,141 +7,165 @@
     "codelyzer"
   ],
   "rules": {
-    "no-console": {
-      "severity": "error"
-    },
-    "encoding": {
-      "severity": "error"
-    },
+    "no-console": true,
+    "encoding": true,
     "indent": {
-      "severity": "error",
-      "options": ["spaces", 4]
-    },
-    "linebreak-style": {
-      "severity": "error",
-      "options": ["LF"]
-    },
-    "eofline": {
-      "severity": "error"
-    },
-    "quotemark": {
-      "severity": "error",
-      "options": ["single", "jsx-double"]
-    },
-    "typedef": {
-      "severity": "warning",
-      "options": ["call-signature", "parameter", "arrow-parameter", "property-declaration", "variable-declaration",
-        "member-variable-declaration", "object-destructuring", "array-destructuring"
+      "options": [
+        "spaces",
+        4
       ]
     },
-    "curly": {
-      "severity": "error"
+    "linebreak-style": {
+      "options": [
+        "LF"
+      ]
     },
+    "eofline": true,
+    "quotemark": {
+      "options": [
+        "single",
+        "jsx-double"
+      ]
+    },
+    "typedef": {
+      "options": [
+        "call-signature",
+        "parameter",
+        "arrow-parameter",
+        "property-declaration",
+        "variable-declaration",
+        "member-variable-declaration",
+        "object-destructuring",
+        "array-destructuring"
+      ]
+    },
+    "curly": true,
     "interface-name": {
-      "severity": "error",
-      "options": ["always-prefix"]
+      "options": [
+        "always-prefix"
+      ]
     },
-    "class-name": {
-      "severity": "error"
-    },
+    "class-name": true,
     "space-before-function-paren": {
-      "severity": "error",
-      "options": [{
-        "anonymous": "never",
-        "named": "never",
-        "asyncArrow": "never",
-        "method": "never",
-        "constructor": "never"
-      }]
+      "options": [
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "never",
+          "method": "never",
+          "constructor": "never"
+        }
+      ]
     },
     "switch-final-break": {
-      "severity": "error",
-      "options": ["always"]
+      "options": [
+        "always"
+      ]
     },
     "unnecessary-else": {
-      "severity": "warning",
-      "options": [{
-        "allow-else-if": true
-      }]
+      "options": [
+        {
+          "allow-else-if": true
+        }
+      ]
     },
     "variable-name": {
-      "severity": "error",
-      "options": ["check-format", "allow-pascal-case"]
+      "options": [
+        "check-format",
+        "allow-pascal-case"
+      ]
     },
     "prefer-const": {
-      "severity": "error",
-      "options": [{
-        "destructuring": "any"
-      }]
+      "options": [
+        {
+          "destructuring": "any"
+        }
+      ]
     },
-    "new-parens": {
-      "severity": "error"
-    },
-    "no-any": {
-      "severity": "warning"
-    },
+    "new-parens": true,
+    "no-any": true,
     "semicolon": {
-      "severity": "error",
-      "options": ["always"]
+      "options": [
+        "always"
+      ]
     },
     "whitespace": {
-      "severity": "error",
-      "options": ["check-branch", "check-decl", "check-operator", "check-module", "check-separator",
-        "check-rest-spread", "check-type", "check-typecast", "check-type-operator", "check-preblock"
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-module",
+        "check-separator",
+        "check-rest-spread",
+        "check-type",
+        "check-typecast",
+        "check-type-operator",
+        "check-preblock"
       ]
     },
     "member-access": {
-        "severity": "error",
-        "options": ["check-constructor", "check-parameter-property"]
+      "options": [
+        "check-constructor",
+        "check-parameter-property"
+      ]
     },
     "ordered-imports": {
-      "severity": "error",
-      "options": [{
-        "named-imports-order": "lowercase-first",
-        "import-sources-order": "lowercase-first",
-        "grouped-imports": true,
-        "groups": [{
-          "name": "angular core modules",
-          "match": "^@angular",
-          "order": 1
-        },
-          {
-            "name": "rxjs",
-            "match": "^rxjs",
-            "order": 10
-          },
-          {
-            "name": "environments",
-            "match": "^@environments",
-            "order": 61
-          },
-          {
-            "name": "local",
-            "match": "^(../|./)",
-            "order": 70
-          },
-          {
-            "name": "other @",
-            "match": "^@",
-            "order": 50
-          },
-          {
-            "name": "other",
-            "match": ".*",
-            "order": 50
-          }
-        ]
-      }]
+      "options": [
+        {
+          "named-imports-order": "lowercase-first",
+          "import-sources-order": "lowercase-first",
+          "grouped-imports": true,
+          "groups": [
+            {
+              "name": "angular core modules",
+              "match": "^@angular",
+              "order": 1
+            },
+            {
+              "name": "rxjs",
+              "match": "^rxjs",
+              "order": 10
+            },
+            {
+              "name": "environments",
+              "match": "^@environments",
+              "order": 61
+            },
+            {
+              "name": "local",
+              "match": "^(../|./)",
+              "order": 70
+            },
+            {
+              "name": "other @",
+              "match": "^@",
+              "order": 50
+            },
+            {
+              "name": "other",
+              "match": ".*",
+              "order": 50
+            }
+          ]
+        }
+      ]
     },
     "angular-whitespace": {
       "severity": "error",
-      "options": ["check-interpolation", "check-pipe", "check-semicolon"]
+      "options": [
+        "check-interpolation",
+        "check-pipe",
+        "check-semicolon"
+      ]
     },
     "component-max-inline-declarations": true,
     "component-selector": [
       true,
       "element",
-      ["mat", "app"],
+      [
+        "mat",
+        "app"
+      ],
       "kebab-case"
     ],
     "contextual-lifecycle": true,
@@ -149,7 +173,10 @@
     "directive-selector": [
       true,
       "attribute",
-      ["mat", "app"],
+      [
+        "mat",
+        "app"
+      ],
       "camelCase"
     ],
     "no-attribute-decorator": true,
